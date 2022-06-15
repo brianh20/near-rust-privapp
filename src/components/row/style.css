@@ -1,0 +1,59 @@
+.itemContainer {
+    border: 1px solid black;
+    margin-bottom: 0.3em;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    height: 36px;
+    align-items: center;
+}
+
+.itemContent {
+    border-top: 1px solid black;
+    padding: 0.5em;
+    line-height: 20px;
+    background-color: lightgray;
+}
+
+.item .id {
+    width: 40px;
+    text-align: center;
+    border-right: 1px solid black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item .title {
+    margin-left: 1em;
+    flex: 1;
+}
+
+.item .price {
+    margin-right: 1em;
+}
+
+.item .action {
+    width: 68px;
+    text-align: center;
+    border-left: 1px solid black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.item .action.buy {
+    background-color: lightskyblue;
+    color: black;
+}
+
+.item .action.view {
+    background-color: darkgrey;
+    color: white;
+}

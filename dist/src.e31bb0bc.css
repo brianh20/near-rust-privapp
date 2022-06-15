@@ -1,0 +1,143 @@
+#page {
+    padding: 2em;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src:  url('/Inter-Regular.3b99ff55.ttf') format('ttf'),
+    url('/Inter-Medium.ccf17ea8.ttf') format('ttf');
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+button, .highlight {
+    border-radius: 5px;
+    border: 0.1em solid #262626;
+    padding: 0.5em 1em;
+}
+
+button:hover, button:focus, button:focus-within, .highlight:hover, .highlight:focus, .highlight:focus-within {
+    border-color: #5F8AFA;
+}
+
+button {
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    outline: none;
+}
+#page #user {
+    text-align: right;
+}
+
+#page #user button{
+    margin-left: 1em;
+}
+
+#new-secret {
+    margin: 1em 0 2em 0;
+}
+
+#new-secret #submit {
+    text-align: center;
+}
+
+.field {
+    display: flex;
+    margin: 0.8em 0;
+    align-items: center;
+}
+
+.field span {
+    width: 70px;
+    text-align: right;
+    margin-right: 0.5em;
+}
+
+.field input {
+    height: 30px;
+    font-size: 17px;
+    flex: 1;
+}
+
+span.important {
+    font-size: 0.7em;
+    font-weight: bold;
+    vertical-align: super;
+    color: #FF585D;
+    line-height: 2em;
+    margin-left: 0.2em;
+}
+#list {
+    border-top: 0px solid black;
+    padding-top: 0em;
+}
+.itemContainer {
+    border: 1px solid black;
+    margin-bottom: 0.3em;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    height: 36px;
+    align-items: center;
+}
+
+.itemContent {
+    border-top: 1px solid black;
+    padding: 0.5em;
+    line-height: 20px;
+    background-color: lightgray;
+}
+
+.item .id {
+    width: 40px;
+    text-align: center;
+    border-right: 1px solid black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item .title {
+    margin-left: 1em;
+    flex: 1;
+}
+
+.item .price {
+    margin-right: 1em;
+}
+
+.item .action {
+    width: 68px;
+    text-align: center;
+    border-left: 1px solid black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.item .action.buy {
+    background-color: lightskyblue;
+    color: black;
+}
+
+.item .action.view {
+    background-color: darkgrey;
+    color: white;
+}
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */
