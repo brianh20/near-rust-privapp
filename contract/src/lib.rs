@@ -1,6 +1,6 @@
 use near_sdk::borsh::{self, BorshDeserialize, BorshSerialize};
 use near_sdk::collections::UnorderedMap;
-use near_sdk::{env, near_bindgen, AccountId, PanicOnDefault};
+use near_sdk::{env, near_bindgen, AccountId, PanicOnDefault, Promise};
 use serde_json::json;
 
 near_sdk::setup_alloc!();
@@ -132,6 +132,7 @@ impl Contract {
                 let price = secret.price as u128 * 10000000000000000000;
                 if price == env::attached_deposit() {
                     secret.viewers.push(buyer);
+                    Promise::new(secret.owner.to_string()).transfer(near_sdk::env::attached_deposit());
                     env::log(b"Buyer purchase went through correctly.");
                     self.secrets.insert(&key, &secret);
                 } else {
