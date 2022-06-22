@@ -1,5 +1,8 @@
 # Secret Safe Dapp
 
+Important: If you deploy this to your own account you will need to update the react app to connect to it.
+Update `/src/config.js` with the corresponding account name in the first line and/or the rest of the project if it applies.
+
 ## How To run and other commands:
 
 - Compile: `RUSTFLAGS='-C link-arg=-s' cargo build --target wasm32-unknown-unknown --release`

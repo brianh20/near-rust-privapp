@@ -1,5 +1,8 @@
 # Secret Safe Dapp
 
+Before you continue, keep in mind that this project is connected to our working example by default.
+If you deploy your own contract `(./contract/README.MD)` you will need to update `./src/config.js` accordingly.
+
 - This is a dApp where users can add an interesting title to some hidden content which unlocks for a price.
 - Every time the secret is sold the creator gets NEAR in exchange for the unlock.
 - The "platform" does not keep any currency from the transaction.
